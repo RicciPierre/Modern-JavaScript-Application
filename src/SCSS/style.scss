@@ -1,0 +1,41 @@
+body {
+    padding-top: 40px;
+    background-color: #ccc;
+    #header {
+        text-align: center;
+        background-image: linear-gradient(to bottom right, rgb(107, 105, 105), black) ;
+        background-position: center;
+        background-size: cover;
+        color: #ccc;
+        #myBtn {
+            color: black;
+            background-color: #ccc;
+            border: none;
+        }
+    }
+    .card {
+        background-color: black;
+        text-align: center;
+        .card-tittle {
+            color: #ccc;
+        }
+        .list-group-item {
+            border: none;
+            background-color: black;
+            color: #ccc;
+        }
+        .btn-primary {
+            color: black;
+            background-color: whitesmoke;
+        }
+        .btn-secondary {
+            color: black;
+        }
+    }
+    #myModal {
+        #submitHero {
+            background-color: black;
+            border: none;
+        }
+    }
+}
