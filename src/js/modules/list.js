@@ -1,3 +1,7 @@
+import { characterId } from "./delete.js";
+
+characterId
+
 function listCharacters(character) {
     character.forEach(({ name, shortDescription, image, description, id }) => {
         const clone = document.querySelector('#hero-tpl').cloneNode(true).content
@@ -13,3 +17,4 @@ function listCharacters(character) {
         characterId.push(id);
     });
 }
+export { listCharacters }

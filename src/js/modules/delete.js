@@ -1,6 +1,6 @@
 const characterId = new Array();
 
-function deleteCharacter() {
+function deleteCharacters() {
     const deleteBtn = document.getElementsByClassName('delete');
     let Confirm;
 
@@ -28,3 +28,5 @@ function deleteCharacter() {
         });
     };
 }
+
+export { characterId, deleteCharacters }

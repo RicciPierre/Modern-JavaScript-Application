@@ -8,3 +8,5 @@ async function fetchData() {
     }
 }
 const data = fetchData();
+
+export { data }
