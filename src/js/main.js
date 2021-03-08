@@ -1,13 +1,11 @@
-//this is the new script 
 (() => {
-    //to make the modal working using jquery from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_modal_js&stacked=h
     $(document).ready(function(){
         $("#myBtn").click(function(){
             $("#myModal").modal();
         });
     });
+    //to make the modal working using jquery from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_modal_js&stacked=h
 
-    //function to fetch the API and take it out: working
     async function fetchData() {
         try {
             const Fetch = await fetch('https://character-database.becode.xyz/characters');
@@ -17,9 +15,8 @@
             console.error(error);
         }
     }
-    let data = fetchData();
+    const data = fetchData();
 
-    //function to list characters into tpl: working
     function listCharacters(character) {
         character.forEach(({ name, shortDescription, image, description, id }) => {
             const clone = document.querySelector('#hero-tpl').cloneNode(true).content
@@ -36,26 +33,16 @@
         });
     }
 
-    //convert Img to base64 using this function:
-    // function encodeImageFileAsURL(element) {
-    //     var file = element.files[0];
-    //     var reader = new FileReader();
-    //     reader.onloadend = function() {
-    //       console.log('RESULT', reader.result)
-    //     }
-    //     reader.readAsDataURL(file);
-    // }
-    //from https://stackoverflow.com/questions/6150289/how-can-i-convert-an-image-into-base64-string-using-javascript
     document.querySelector("#HeroImage").addEventListener("change",(e) => {
         const file = e.target.files[0];
         const reader = new FileReader();
+
         reader.onloadend = () => {
             image = reader.result.replace(/^data:image\/[a-z]+;base64,/, ""); // strip off the data: url prefix to get just the base64-encoded bytes from  https://stackoverflow.com/questions/38633061/how-can-i-strip-the-dataimage-part-from-a-base64-string-of-any-image-type-in-ja
         };
         reader.readAsDataURL(file)
     });
 
-    //adding hero from the modal's form: working
     function addingCharacters() {
         const inputs = Array.from(document.querySelectorAll(".modal-body input"));
 
@@ -64,7 +51,6 @@
             console.log(values);
             const [name, shortDescription, description] = values;
             
-
             if (values.some((value) => value == "")) {
                 alert("There's an empty input!");
                 return;
@@ -82,7 +68,6 @@
                     image
                 }),
             });
-            console.log(response.status)
             
             document.location.reload();
             if (!response.ok) {
@@ -91,7 +76,6 @@
         });
     }
 
-    //delete a character: working
     const characterId = new Array();
 
     function deleteCharacter() {
@@ -113,9 +97,6 @@
                                 "Content-Type": "application/json",
                             },
                         });
-
-                        const deletedCharacter = await response.json();
-                        console.log(deletedCharacter);
                         location.reload();
 
                     } catch (error) {
