@@ -1,5 +1,5 @@
 node_modules
-src/vendor
+src/vendor/
 .eslintrc.json
 .prettierignore
 .prettierrc.json
