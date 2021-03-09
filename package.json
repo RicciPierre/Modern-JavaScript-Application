@@ -1,0 +1,20 @@
+{
+  "name": "Modern-JavaScript-Application",
+  "version": "1.0.0",
+  "description": "- Repository: `modern-js-application` :package: - Type of Challenge: `learning` - Duration: `4 days` :watch: - Deadline: `11/03 17h00` :running: - Deployment strategy: `Github pages` - Team challenge : `solo` or `duo` :two_men_holding_hands: - Submission : `Google form` :ballot_box_with_check:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicciPierre/Modern-JavaScript-Application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicciPierre/Modern-JavaScript-Application/issues"
+  },
+  "homepage": "https://github.com/RicciPierre/Modern-JavaScript-Application#readme"
+}

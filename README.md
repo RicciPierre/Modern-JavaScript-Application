@@ -5,7 +5,7 @@
 - Duration: `4 days` :watch:
 - Deadline: `11/03 17h00` :running:
 - Deployment strategy: `Github pages`
-- Team challenge : `solo` or `duo` :two_men_holding_hands:
+- Team challenge : `solo`
 - Submission : `Google form` :ballot_box_with_check:
 
 ## Learning Objectives
