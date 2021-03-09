@@ -44,7 +44,7 @@ If you also find this vision of a happy future enticing read on, and reach codin
 There will be a lot to take here. It's a lot of so-called _tooling_ :wrench: that doesn't impact functionality directly, but it can improve several areas of development immensely.  
 Let's take this short journey step by step, day by day.
 
-### Day 1 - Refactor
+### Day 1 - Refactor [x]
 
 1. Copy all your files over from the Character Manager App in a new repository (except for the `.git` folder of course)
 2. Take your existing JS file from the Character Manager App, and reorganize (_refactor_) the code in as many functions as you can. Do it one step at a time: you can start from the outside and go in, or from the inside out. A few principles to keep in mind:
@@ -56,7 +56,7 @@ Let's take this short journey step by step, day by day.
 
 _Do you have time to spare? See if you can help someone, add "nice-to-have" features to your app, or refactor another app of yours!_
 
-### Day 2 - JavaScript Modules
+### Day 2 - JavaScript Modules [x]
 
 It's a lot of functions, in a long file. Guess what? In modern JavaScript, you can divide your code into multiple files for better organization, and import/export things (functions, variables, classes) from one file to another.
 
@@ -120,7 +120,7 @@ The most popular package manager in the JavaScript ecosystem is [**npm**](https:
 _:hourglass: **Reminder**: when you install the first package via **npm** you will notice a new folder called `node_modules`. This is where all dependencies are saved. But you will also note that the `package.json` file is updated, and that a `package-lock.json` file is created. We want to commit these last two files so that a colleague can install the same dependencies we have, but we don't want to commit the full `node_modules` folder since it's large (it can be several GBs, and thousands of files!) and its content can always be reproduced starting from a `package-lock.json` file.  
 Add `node_modules` to your `.gitignore` file if you haven't already._
 
-### Day 4 - Linters and Formatters
+### Day 4 - Linters and Formatters [x]
 
 We have everything we need to work with a well-structured application. This will be especially useful when dealing with large applications. How about a couple of tools that will help ourselves, and make our own coding experience smoother?
 
