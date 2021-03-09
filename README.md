@@ -86,9 +86,9 @@ Popular bundlers include Parcel, Webpack, Rollup, and Browserify.
    node_modules
    ```
 2. Choose a bundler, follow its installation instructions, and use it from the command line (CLI) to generate the output JS file (often named `index.js`, or `main.js`).  
-   _Don't know which bundler to pick? 
-   - [Webpack.js](https://webpack.js.org/guides/getting-started/) is the most popular, but not always easy to configure; 
-   - [Parcel.js](https://parceljs.org/getting_started.html) is the simplest to get started with._
+   \_Don't know which bundler to pick?
+   - [Webpack.js](https://webpack.js.org/guides/getting-started/) is the most popular, but not always easy to configure;
+   - [Parcel.js](https://parceljs.org/getting_started.html) is the simplest to get started with.\_
 3. Edit your `index.html` so that it includes `index.js`.  
    _Hint: the generated JS file doesn't use "modules" anymore, we are back at plain old JS._
 4. Can you use your bundler to compile your SASS files as well?
@@ -144,5 +144,5 @@ A formatter is a tool that takes your code and re-writes it according to a set o
 
 #### Linters vs. Formatters, what's the difference?
 
-- Linters check code-quality and catch bugs early. 
+- Linters check code-quality and catch bugs early.
 - Formatters make your code cleaner and easier to read.

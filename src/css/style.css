@@ -5,7 +5,13 @@ body {
 
 body #header {
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#6b6969), to(black));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#6b6969),
+    to(black)
+  );
   background-image: linear-gradient(to bottom right, #6b6969, black);
   background-position: center;
   background-size: cover;
