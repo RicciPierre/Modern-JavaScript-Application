@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html",
-    "preinstall": "npx npm-force-resolutions"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -30,8 +29,5 @@
     "core-js": "^3.9.1",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1"
-  },
-  "resolutions": {
-    "@babel/preset-env": "7.13.8"
   }
 }
