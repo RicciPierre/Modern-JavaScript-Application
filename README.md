@@ -67,7 +67,7 @@ It's a lot of functions, in a long file. Guess what? In modern JavaScript, you c
    _Note: If tutorials or guides talk about `npm`, or ask you to add a `package.json` to your project, or ask you to run `$ npm install somethingsomething` ignore them, we'll see all that later. Find out how to use "modules" in the browser directly._
 4. Apply the import/export syntax to your JavaScript code. Don't forget to update your `index.html` as necessary since the previous way of including JavaScript will not work anymore (hint: you'll need to add `type="module"` somewhere)
 
-### Day 3 - part 1 - Modules and the Browser, so Bundler :construction:
+### Day 3 - part 1 - Modules and the Browser, so Bundler :heavy_check_mark:
 
 If your code is divided between, say, 8 different files and you use JavaScript modules, the browser will have to download 8 files instead of one. Moreover, older browsers don't support modules.  
 For this reason (and more) most JavaScript projects these days use something called a **bundler**.
@@ -94,7 +94,7 @@ Popular bundlers include Parcel, Webpack, Rollup, and Browserify.
 4. Can you use your bundler to compile your SASS files as well?
 5. Optional: use your bundler to watch changes so that every time you edit and save your source files, a new output file is generated.
 
-### Day 3 - part 2 - Package Manager :construction:
+### Day 3 - part 2 - Package Manager :heavy_check_mark:
 
 A "package" is simply a reusable piece of software, often a third-party library. If you used the tool _node-sass_ in your Character App, for example, you included a package.
 
