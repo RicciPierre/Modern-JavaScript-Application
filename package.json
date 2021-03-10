@@ -4,7 +4,9 @@
   "description": "- Repository: `modern-js-application` :package: - Type of Challenge: `learning` - Duration: `4 days` :watch: - Deadline: `11/03 17h00` :running: - Deployment strategy: `Github pages` - Team challenge : `solo` or `duo` :two_men_holding_hands: - Submission : `Google form` :ballot_box_with_check:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,15 @@
     "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "parcel-bundler": "^1.12.4",
     "prettier": "2.2.1"
+  },
+  "dependencies": {
+    "core-js": "^3.9.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
   }
 }
