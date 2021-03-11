@@ -142,7 +142,7 @@ function _fetchData() {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return fetch("https://character-database.becode.xyz/characters");
+            return fetch('https://character-database.becode.xyz/characters');
 
           case 3:
             Fetch = _context.sent;
@@ -187,17 +187,17 @@ var characterId = new Array();
 exports.characterId = characterId;
 
 function deleteCharacters() {
-  var deleteBtn = document.getElementsByClassName("delete");
+  var deleteBtn = document.getElementsByClassName('delete');
   var Confirm;
 
   var _loop = function _loop(i) {
-    deleteBtn[i].addEventListener("click", /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+    deleteBtn[i].addEventListener('click', /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
       var id, response;
       return regeneratorRuntime.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              Confirm = confirm("REALLY ?!");
+              Confirm = confirm('REALLY ?!');
 
               if (!(Confirm === true)) {
                 _context.next = 13;
@@ -208,9 +208,9 @@ function deleteCharacters() {
               _context.prev = 3;
               _context.next = 6;
               return fetch("https://character-database.becode.xyz/characters/".concat(id), {
-                method: "DELETE",
+                method: 'DELETE',
                 headers: {
-                  "Content-Type": "application/json"
+                  'Content-Type': 'application/json'
                 }
               });
 
@@ -257,12 +257,12 @@ function listCharacters(character) {
         image = _ref.image,
         description = _ref.description,
         id = _ref.id;
-    var clone = document.querySelector("#hero-tpl").cloneNode(true).content;
-    var target = document.querySelector("#target");
-    clone.querySelector("#heroName").innerHTML = name;
-    clone.querySelector("#heroShort").innerHTML = shortDescription;
-    clone.querySelector("#heroImg").src = "data:image/*;base64,".concat(image);
-    clone.querySelector("#heroLong").innerHTML = description;
+    var clone = document.querySelector('#hero-tpl').cloneNode(true).content;
+    var target = document.querySelector('#target');
+    clone.querySelector('#heroName').innerHTML = name;
+    clone.querySelector('#heroShort').innerHTML = shortDescription;
+    clone.querySelector('#heroImg').src = "data:image/*;base64,".concat(image);
+    clone.querySelector('#heroLong').innerHTML = description;
     target.appendChild(clone);
 
     _delete.characterId.push(id);
@@ -293,8 +293,8 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function addingCharacters() {
-  var inputs = Array.from(document.querySelectorAll(".modal-body input"));
-  document.getElementById("submitHero").addEventListener("click", /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+  var inputs = Array.from(document.querySelectorAll('.modal-body input'));
+  document.getElementById('submitHero').addEventListener('click', /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var values, _values, name, shortDescription, description, response;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -308,7 +308,7 @@ function addingCharacters() {
             _values = _slicedToArray(values, 3), name = _values[0], shortDescription = _values[1], description = _values[2];
 
             if (!values.some(function (value) {
-              return value === "";
+              return value === '';
             })) {
               _context.next = 5;
               break;
@@ -320,10 +320,10 @@ function addingCharacters() {
 
           case 5:
             _context.next = 7;
-            return fetch("https://character-database.becode.xyz/characters", {
-              method: "POST",
+            return fetch('https://character-database.becode.xyz/characters', {
+              method: 'POST',
               headers: {
-                "Content-Type": "application/json"
+                'Content-Type': 'application/json'
               },
               body: JSON.stringify({
                 description: description,
@@ -358,12 +358,12 @@ Object.defineProperty(exports, "__esModule", {
 exports.convert = convert;
 
 function convert() {
-  document.querySelector("#HeroImage").addEventListener("change", function (e) {
+  document.querySelector('#HeroImage').addEventListener('change', function (e) {
     var file = e.target.files[0];
     var reader = new FileReader();
 
     reader.onloadend = function () {
-      image = reader.result.replace(/^data:image\/[a-z]+;base64,/, ""); // strip off the data: url prefix to get just the base64-encoded bytes from  https://stackoverflow.com/questions/38633061/how-can-i-strip-the-dataimage-part-from-a-base64-string-of-any-image-type-in-ja
+      image = reader.result.replace(/^data:image\/[a-z]+;base64,/, ''); // strip off the data: url prefix to get just the base64-encoded bytes from  https://stackoverflow.com/questions/38633061/how-can-i-strip-the-dataimage-part-from-a-base64-string-of-any-image-type-in-ja
     };
 
     reader.readAsDataURL(file);
